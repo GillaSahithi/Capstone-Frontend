@@ -1,0 +1,18 @@
+.top{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.card {
+    min-height: 80px; 
+    display: flex;    
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center; 
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.card-body {
+    padding: 20px; 
+}
+
