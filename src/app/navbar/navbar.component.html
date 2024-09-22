@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ELEVATE LOCAL</a>
       <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-expanded="!isCollapsed" aria-label="Toggle navigation">
@@ -17,7 +17,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/events" routerLinkActive="active">Events</a>
-          </li>
+          </li> -->
   
           <!-- Profile Icon Dropdown -->
           <!-- <li class="nav-item dropdown">
@@ -26,11 +26,60 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
               <li><a class="dropdown-item" href="/profile">My Profile</a></li>
-              <li><a class="dropdown-item" href="/settings">Settings</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" (click)="onLogout()">Logout</a></li>
             </ul>
-          </li> -->
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+   -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ELEVATE LOCAL</a>
+  
+      <!-- Toggle Button for Collapsing Navbar -->
+      <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" aria-controls="navbarNav" aria-expanded="!isCollapsed" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div [class.collapse]="isCollapsed" class="navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+  
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active" aria-current="page">Home</a>
+          </li>
+  
+          <!-- Explore -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/explore" routerLinkActive="active">Explore</a>
+          </li>
+  
+          <!-- Offers -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/offers" routerLinkActive="active">Offers</a>
+          </li>
+  
+          <!-- Events -->
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/events" routerLinkActive="active">Events</a>
+          </li>
+  
+          <!-- Profile Icon Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/profile.jpg" alt="Profile" width="30" height="30" class="rounded-circle"> <!-- Update with actual profile image -->
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+              <li><a class="dropdown-item" routerLink="/profile">My Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" (click)="confirmLogout()">Logout</a></li>
+            </ul>
+          </li>
+  
         </ul>
       </div>
     </div>

@@ -1,18 +1,22 @@
-.top{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
 .card {
-    min-height: 80px; 
-    display: flex;    
-    flex-direction: column; 
-    justify-content: center;
-    text-align: center; 
-    font-family: 'Times New Roman', Times, serif;
-}
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card.highlighted {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05); /* Slightly scale the card */
+    border: 2px solid #007bff; /* Change border color to indicate highlight */
+  }
 
-.card-body {
-    padding: 20px; 
-}
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+  }
 
+  .container{
+      font-family: 'Times New Roman', Times, serif;
+      text-align: center;
+  }
+
+  

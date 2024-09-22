@@ -19,7 +19,7 @@
 
 .container{
   font-family: 'Times New Roman', Times, serif;
-  background:linear-gradient(lightgreen,lightyellow);
+  /* background:linear-gradient(lightgreen,lightyellow); */
   background-repeat: no-repeat;
   background-attachment: fixed;
 

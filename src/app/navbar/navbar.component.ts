@@ -11,8 +11,18 @@ import { RouterModule } from '@angular/router';
 })
 export class NavbarComponent {
   isCollapsed = true;
+
+  // Method to confirm logout
+  confirmLogout() {
+    const confirmed = confirm('Are you sure you want to logout?');
+    if (confirmed) {
+      this.onLogout();
+    }
+  }
+
+  // Actual logout logic
   onLogout() {
-    // Handle the logout logic here
+    // Your logout logic here, e.g., clear session, redirect to login
     console.log('User logged out');
   }
 }
