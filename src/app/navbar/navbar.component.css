@@ -1,5 +1,10 @@
+.custom-navbar {
+  background-color: #c01003  !important; /* Dark background */
+  /* color: white; */
+}
+
 .navbar {
-    background-color: #f8f9fa;
+    background-color: #1a7fe4;
     padding: 1rem;
     font-family: 'Times New Roman', Times, serif;
   }
@@ -7,18 +12,13 @@
   .nav-link {
     color: #000;
     transition: all 0.3s ease-in-out;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem ;
     border: 1px solid transparent;
     border-radius: 5px;
-    background-color: aqua;
+    background-color: #C0EBA6;
+    margin-right: 10px;
     
   }
-  
-  /* .nav-link:hover, .nav-link.active {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-  } */
   
   .navbar .btn {
     font-weight: 500;
