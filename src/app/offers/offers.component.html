@@ -1,1 +1,20 @@
-<p>offers works!</p>
+<div class="container mt-4">
+    <h2>Offers for Shop: {{ shopId }}</h2>
+  
+    <div *ngIf="offers.length > 0; else noOffers" class="row">
+      <div class="col-md-4 mb-3" *ngFor="let offer of offers">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ offer.title }}</h5>
+            <p class="card-text">{{ offer.description }}</p>
+            <p class="card-text"><strong>Price:</strong> ${{ offer.price }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <ng-template #noOffers>
+      <p>No offers available for this shop.</p>
+    </ng-template>
+  </div>
+  
