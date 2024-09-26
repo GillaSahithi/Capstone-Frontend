@@ -8,11 +8,12 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
 import { VendorComponent } from './vendor/vendor.component';
+import { FooterComponent } from "./footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,HomeComponent,RegisterComponent,LandingComponent,VendorComponent,LoginComponent,CategoryComponent,ForgotPasswordComponent,NavbarComponent],
+  imports: [RouterOutlet, HomeComponent, RegisterComponent, LandingComponent, VendorComponent, LoginComponent, CategoryComponent, ForgotPasswordComponent, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

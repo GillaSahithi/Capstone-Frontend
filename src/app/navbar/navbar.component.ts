@@ -5,11 +5,17 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule,RouterModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  router: any;
+
+  goToProfile() {
+    this.router.navigate(['/profile']);
+    throw new Error('Method not implemented.');
+  }
   isCollapsed = true;
 
   // Method to confirm logout

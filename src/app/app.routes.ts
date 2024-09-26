@@ -5,6 +5,8 @@ import { HomeComponent } from './home/home.component';
 import { LandingComponent } from './landing/landing.component';
 import { OffersComponent } from './offers/offers.component';
 import { RegisterComponent } from './register/register.component';
+import { FooterComponent } from './footer/footer.component';
+import { ProfileComponent } from './profile/profile.component';
 
 export const routes: Routes = [
     {path:'',redirectTo:'/landing',pathMatch:'full'},
@@ -14,5 +16,7 @@ export const routes: Routes = [
     {path:'events',component:EventsComponent},
     {path:'landing',component:LandingComponent},
     {path:'register',component:RegisterComponent},
-    {path:'explore',component:ExploreComponent}
+    {path:'explore',component:ExploreComponent},
+    {path:'footer',component:FooterComponent},
+    {path:'profile',component:ProfileComponent}
 ];

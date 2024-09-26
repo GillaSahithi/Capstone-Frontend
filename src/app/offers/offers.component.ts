@@ -16,25 +16,47 @@ interface Offer {
   styleUrl: './offers.component.css'
 })
 export class OffersComponent {
-  @Input() shopId: string = ''; // Input for shop ID
+  shopId: string = 'Bakery'; // Example shop ID, this can be dynamic
+  offers = [
+    {
+      title: '10% Off on Cakes',
+      description: 'Enjoy a delicious cake with 10% off for all orders above Rs.30.',
+      price: 27 // Original price is Rs.30
+    },
+    {
+      title: '15% Off on Fresh Breads',
+      description: 'Grab your favorite fresh bread with a 15% discount this week only!',
+      price: 8.5 // Original price is Rs.10
+    },
+    {
+      title: 'Buy 1 Get 1 Free on Cookies',
+      description: 'Buy one dozen cookies and get another one free! Perfect for sharing.',
+      price: 12 // Original price for 1 dozen
+    },
+    {
+      title: '5% Off on Groceries',
+      description: 'Get a 5% discount on your grocery bill over Rs.50.',
+      price: 47.5 // Original price is Rs.50
+    },
+    {
+      title: 'Special Offer on Organic Fruits',
+      description: 'Enjoy 20% off on all organic fruits every Sunday!',
+      price: 24 // Original price is Rs.30
+    },
+    {
+      title: '15% Off on Unique Handcrafted Items',
+      description: 'Discover beautiful handcrafted items with a 15% discount.',
+      price: 17 // Original price is Rs.20
+    }
+  ];
 
-  offers: Offer[] = [];
-
-  constructor() {}
-
-  ngOnInit(): void {
-    // Fetch the offers based on the shopId
-    this.loadOffers(this.shopId);
+  onCardHover() {
+    // Logic when the card is hovered can be added here if needed
+    console.log('Card hovered');
   }
 
-  // Simulated method to fetch offers for a specific shop
-  loadOffers(shopId: string): void {
-    if (shopId) {
-      // Simulate offers retrieval
-      this.offers = [
-        { title: 'Discounted Shoes', description: '50% off on selected shoes', price: 49.99 },
-        { title: 'Buy 1 Get 1 Free', description: 'Applicable on all accessories', price: 29.99 }
-      ];
-    }
+  onCardLeave() {
+    // Logic when the card is left can be added here if needed
+    console.log('Card left');
   }
 }
