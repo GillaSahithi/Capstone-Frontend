@@ -8,7 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProfileComponent } from './profile/profile.component';
 // import { ShopsComponent } from './shops/shops.component';
-// import { ProductsComponent } from './products/products.component';
+import { ProductsComponent } from './products/products.component';
 
 export const routes: Routes = [
     {path:'',redirectTo:'/landing',pathMatch:'full'},
@@ -20,7 +20,7 @@ export const routes: Routes = [
     {path:'register',component:RegisterComponent},
     {path:'explore',component:ExploreComponent},
     {path:'footer',component:FooterComponent},
-    {path:'profile',component:ProfileComponent}
+    {path:'profile',component:ProfileComponent},
     // {path:'shops',component:ShopsComponent}
-    // {path:'products',component:ProductsComponent}
+    {path:'products',component:ProductsComponent}
 ];

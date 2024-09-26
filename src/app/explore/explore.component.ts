@@ -13,7 +13,7 @@ export class ExploreComponent {
   constructor(private router: Router) {}
 
   navigateTo(route: string) {
-    this.router.navigate([route]);
+    this.router.navigate(['/products']);
   }
 
 }

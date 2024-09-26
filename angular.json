@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "aptconnect-frontend": {
+    "FinalApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/aptconnect-frontend",
+            "outputPath": "dist/final-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -23,22 +23,22 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public",
-                "output": "public"
+                "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
               }
-            ],
+            ],            
             "styles": [
               "src/styles.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "aptconnect-frontend:build:production"
+              "buildTarget": "FinalApp:build:production"
             },
             "development": {
-              "buildTarget": "aptconnect-frontend:build:development"
+              "buildTarget": "FinalApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,9 +90,11 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": "public"
               }
             ],
+            
             "styles": [
               "src/styles.css"
             ],
@@ -101,8 +103,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "d92deadc-e5a9-43e0-9e82-e8668de5c0c7"
   }
 }
