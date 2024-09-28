@@ -7,7 +7,6 @@ import { OffersComponent } from './offers/offers.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { ProfileComponent } from './profile/profile.component';
-// import { ShopsComponent } from './shops/shops.component';
 import { ProductsComponent } from './products/products.component';
 
 export const routes: Routes = [
@@ -21,6 +20,5 @@ export const routes: Routes = [
     {path:'explore',component:ExploreComponent},
     {path:'footer',component:FooterComponent},
     {path:'profile',component:ProfileComponent},
-    // {path:'shops',component:ShopsComponent}
     {path:'products',component:ProductsComponent}
 ];

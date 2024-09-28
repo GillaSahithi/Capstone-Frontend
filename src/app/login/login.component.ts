@@ -21,14 +21,12 @@ export class LoginComponent {
 
   onSubmit() {
     if (this.loginForm.valid) {
-      // Handle the login logic
       const formValues = this.loginForm.value;
       console.log('Form Values:', formValues);
     }
   }
 
   onForgotPassword() {
-    // Handle forgot password logic
     console.log('Forgot Password clicked');
   }
 }
