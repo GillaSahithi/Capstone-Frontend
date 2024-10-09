@@ -24,28 +24,28 @@ export class ProductsComponent {
       description: 'Rich chocolate cake with creamy frosting.',
       price: 99,
       category: 'Bakery',
-      imageUrl: 'https://example.com/chocolate-cake.jpg'
+      imageUrl: '/assets/chocolate cake.jpg'
     },
     {
       name: 'Croissant',
       description: 'Flaky and buttery croissant.',
       price: 299,
       category: 'Bakery',
-      imageUrl: 'https://example.com/croissant.jpg'
+      imageUrl: '/assets/croissants.jpg'
     },
     {
       name: 'Fancy Watch',
       description: 'Elegant watch with leather strap.',
       price: 1999,
       category: 'Fancy Store',
-      imageUrl: 'https://example.com/fancy-watch.jpg'
+      imageUrl: '/assets/watch.jpg'
     },
     {
       name: 'Designer Handbag',
       description: 'Stylish handbag for all occasions.',
       price: 29999,
       category: 'Fancy Store',
-      imageUrl: 'https://example.com/designer-handbag.jpg'
+      imageUrl: '/assets/handbag.jpg'
     }
   ];
 
